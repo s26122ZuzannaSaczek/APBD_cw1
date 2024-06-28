@@ -14,7 +14,12 @@ namespace Cwiczenia1
 
         public static double CalculateAverage(int[] numbers)
         {
-            return numbers.Average();
+            double numSum = 0;
+            foreach (var number in numbers)
+            {
+                numSum += number; // Zmieniono nazwę zmiennej na `sum`
+            }
+            return numSum / numbers.Length;
         }
         
         public static int FindMax(int[] numbers)
