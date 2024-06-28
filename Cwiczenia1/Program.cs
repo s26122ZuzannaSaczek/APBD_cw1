@@ -16,6 +16,11 @@ namespace Cwiczenia1
         {
             return numbers.Average();
         }
+        
+        public static int FindMax(int[] numbers)
+        {
+            return numbers.Max();
+        }
 
     }
 }
